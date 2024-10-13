@@ -4,20 +4,23 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "",
-    "build": "",
+    "dev": "storybook dev -p 6006",
+    "build": "vite build && tsc -b",
     "lint:check": "biome lint ./",
     "format:check": "biome format ./",
     "lint:fix": "biome format --write ./ && biome lint --apply ./"
   },
   "keywords": [],
-  "author": "Yuta",
+  "author": {
+    "name": "Yuta (https://github.com/yutalinux)"
+  },
   "license": "MIT",
   "description": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/yutalinux/web-component-lib.git"
   },
+  "packageManager": "bun@1.1.30",
   "dependencies": {
     "react": "^18.3.1",
     "react-aria-components": "^1.4.0",
@@ -38,6 +41,7 @@
     "@storybook/react-vite": "^8.3.5",
     "@storybook/test": "^8.3.5",
     "@storybook/theming": "^8.3.5",
+    "@types/bun": "latest",
     "@types/node": "^22.7.5",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
