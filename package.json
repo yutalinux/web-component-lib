@@ -2,7 +2,6 @@
   "name": "web-component-lib",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "vite build && tsc -b",
@@ -22,6 +21,16 @@
     "url": "https://github.com/yutalinux/web-component-lib.git"
   },
   "packageManager": "bun@1.1.30",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
   "dependencies": {
     "ajv": "^8.17.1",
     "react": "^18.3.1",
