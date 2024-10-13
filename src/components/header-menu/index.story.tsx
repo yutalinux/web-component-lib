@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
+import HeaderMenu from ".";
 import MenuLinkItem from "../menu/link-item";
-import HeaderMenu from "./index";
 import HeaderMenuLinks from "./links";
 
 const meta = {

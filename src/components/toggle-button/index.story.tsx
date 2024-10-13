@@ -1,30 +1,24 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import { fn } from "@storybook/test";
-import Button from ".";
+import ToggleButton from ".";
 
 const meta = {
-	title: "Design System/Button/Button",
-	component: Button,
+	title: "Design System/Button/ToggleButton",
+	component: ToggleButton,
 	parameters: {
 		layout: "centered",
 	},
 	tags: ["autodocs"],
-	args: { onClick: fn() },
-} satisfies Meta<typeof Button>;
+	args: { onChange: fn() },
+} satisfies Meta<typeof ToggleButton>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Normal: Story = {
 	args: {
-		color: "primary",
-		label: "Button",
-	},
-};
-
-export const Secondary: Story = {
-	args: {
-		color: "secondary",
 		label: "Button",
 	},
 };
