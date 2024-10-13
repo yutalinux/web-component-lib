@@ -1,4 +1,4 @@
-import type * as Aria from "react-aria-components";
+import * as Aria from "react-aria-components";
 import { type VariantProps, tv } from "tailwind-variants";
 
 const button = tv({
