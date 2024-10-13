@@ -14,9 +14,15 @@
   "author": "Yuta",
   "license": "MIT",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yutalinux/web-component-lib.git"
+  },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-aria-components": "^1.4.0",
+    "react-dom": "^18.3.1",
+    "tailwind-variants": "^0.2.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.3",
