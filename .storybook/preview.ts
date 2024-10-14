@@ -1,4 +1,4 @@
-import "../src/style.css";
+import "@/styles";
 import { withThemeByClassName } from "@storybook/addon-themes";
 
 export const decorators = [
@@ -26,4 +26,5 @@ export const parameters = {
       { name: "dark", value: "#171717" },
     ],
   },
+  layout: "centered",
 };

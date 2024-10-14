@@ -1,13 +1,16 @@
-import { expect, test } from "bun:test";
-import { createElement } from "react";
-import { renderToString } from "react-dom/server";
+import { snapshot } from "@/utils/tests/snapshot";
+import { expect, test } from "vitest";
 import Button from ".";
 
 test("Button Snapshot", () => {
-  const button = createElement(Button, {
-    onClick: () => {},
-    label: "Click me",
-  });
-  const renderedString = renderToString(button);
-  expect(renderedString).toMatchSnapshot();
+  expect(snapshot(Button, { label: "Button" })).toMatchSnapshot();
+  expect(
+    snapshot(Button, { color: "secondary", label: "Button" }),
+  ).toMatchSnapshot();
+  expect(
+    snapshot(Button, { size: "small", label: "Button" }),
+  ).toMatchSnapshot();
+  expect(
+    snapshot(Button, { size: "large", label: "Button" }),
+  ).toMatchSnapshot();
 });
