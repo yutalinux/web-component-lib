@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 *storybook.log
+
+# Npmでインストールしてもgitにアップロードされないように
+package-lock.json
