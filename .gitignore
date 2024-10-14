@@ -27,3 +27,7 @@ dist-ssr
 
 # npmでインストールしてもgitにアップロードされないように
 package-lock.json
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
