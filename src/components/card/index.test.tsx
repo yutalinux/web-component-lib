@@ -1,10 +1,10 @@
 import { expect, test } from "bun:test";
 import { createElement } from "react";
 import { renderToString } from "react-dom/server";
-import Button from ".";
+import Card from ".";
 
 test("Button Snapshot", () => {
-  const button = createElement(Button, { onClick: () => {}, label: 'Click me' })
+  const button = createElement(Card, null)
   const renderedString = renderToString(button)
   expect(renderedString).toMatchSnapshot()
 })
