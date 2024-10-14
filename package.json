@@ -7,9 +7,10 @@
     "build": "vite build && tsc -b",
     "test:update-snapshot": "bun test --update-snapshots",
     "lint": "bun run lint:check",
-    "lint:check": "biome lint ./",
-    "format:check": "biome format ./",
-    "lint:fix": "biome format --write ./ && biome lint --apply ./"
+    "lint:check": "biome lint",
+    "lint:fix": "biome format --write && biome lint --apply",
+    "format:check": "biome format",
+    "format:fix": "biome format --write"
   },
   "keywords": [],
   "author": {

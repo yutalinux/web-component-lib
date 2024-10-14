@@ -4,7 +4,7 @@ import { renderToString } from "react-dom/server";
 import Card from ".";
 
 test("Button Snapshot", () => {
-  const button = createElement(Card, null)
-  const renderedString = renderToString(button)
-  expect(renderedString).toMatchSnapshot()
-})
+  const button = createElement(Card, null);
+  const renderedString = renderToString(button);
+  expect(renderedString).toMatchSnapshot();
+});

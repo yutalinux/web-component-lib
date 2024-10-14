@@ -4,7 +4,10 @@ import { renderToString } from "react-dom/server";
 import Button from ".";
 
 test("Button Snapshot", () => {
-  const button = createElement(Button, { onClick: () => {}, label: 'Click me' })
-  const renderedString = renderToString(button)
-  expect(renderedString).toMatchSnapshot()
-})
+  const button = createElement(Button, {
+    onClick: () => {},
+    label: "Click me",
+  });
+  const renderedString = renderToString(button);
+  expect(renderedString).toMatchSnapshot();
+});
