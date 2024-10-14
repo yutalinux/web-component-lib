@@ -1,5 +1,5 @@
-import { expect, test } from "bun:test";
 import { snapshot } from "@/utils/tests/snapshot";
+import { expect, test } from "vitest";
 import Box from ".";
 
 test("Box Snapshot", () => {
