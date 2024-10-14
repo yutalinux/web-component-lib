@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "vite build && tsc -b",
+    "test:update-snapshot": "bun test --update-snapshots",
     "lint": "lint:check",
     "lint:check": "biome lint ./",
     "format:check": "biome format ./",
@@ -41,6 +42,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.3",
     "@chromatic-com/storybook": "^2.0.2",
+    "@happy-dom/global-registrator": "^15.7.4",
     "@storybook/addon-essentials": "^8.3.5",
     "@storybook/addon-interactions": "^8.3.5",
     "@storybook/addon-links": "^8.3.5",
