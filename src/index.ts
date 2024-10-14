@@ -1,6 +1,4 @@
-import "./style.css";
-
-import "./styles/typography.css";
+import "@/styles";
 
 export * from "./components/button";
 export * from "./components/toggle-button";

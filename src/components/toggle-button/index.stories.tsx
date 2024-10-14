@@ -4,11 +4,8 @@ import { fn } from "@storybook/test";
 import ToggleButton from ".";
 
 const meta = {
-  title: "Design System/Button/ToggleButton",
+  title: "Design System/Components/ToggleButton",
   component: ToggleButton,
-  parameters: {
-    layout: "centered",
-  },
   tags: ["autodocs"],
   args: { onChange: fn() },
 } satisfies Meta<typeof ToggleButton>;

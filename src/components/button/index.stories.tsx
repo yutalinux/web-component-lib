@@ -3,11 +3,8 @@ import { fn } from "@storybook/test";
 import Button from ".";
 
 const meta = {
-  title: "Design System/Button/Button",
+  title: "Design System/Components/Button",
   component: Button,
-  parameters: {
-    layout: "centered",
-  },
   tags: ["autodocs"],
   args: { onClick: fn() },
 } satisfies Meta<typeof Button>;

@@ -6,7 +6,7 @@ import MenuLinkItem from "../menu/link-item";
 import HeaderMenuLinks from "./links";
 
 const meta = {
-  title: "Design System/Menu/Header Menu",
+  title: "Design System/Components/HeaderMenu",
   component: HeaderMenu,
   tags: ["autodocs"],
 } satisfies Meta<typeof HeaderMenu>;

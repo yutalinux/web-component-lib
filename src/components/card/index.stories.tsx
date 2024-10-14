@@ -4,7 +4,7 @@ import React from "react";
 import Card from ".";
 
 const meta = {
-  title: "Design System/Layout/Card",
+  title: "Design System/Components/Card",
   component: Card,
   tags: ["autodocs"],
 } satisfies Meta<typeof Card>;
