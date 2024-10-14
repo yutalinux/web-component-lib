@@ -1,0 +1,23 @@
+name: Check Pull Request
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Install
+        run: bun install
+      - name: Test
+        run: bun run test
+      - name: Lint
+        run: bun run lint:check
+      - name: Format Check
+        run: bun run format:check
+      - name: Build
+        run: bun run build
