@@ -25,11 +25,11 @@ export const LoginForm: Story = {
         <Box orientation="vertical">
           <div>
             <Label label="Email" />
-            <TextBox />
+            <TextBox type="email" />
           </div>
           <div>
             <Label label="Password" />
-            <TextBox />
+            <TextBox type="password" />
           </div>
         </Box>
         <Button label="Submit" />
