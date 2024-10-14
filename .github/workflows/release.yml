@@ -1,0 +1,16 @@
+name: Create Relase
+
+on:
+  push:
+    tags:
+      - v.*
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get Tag Name
+        run: echo "TAG_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Create Relase
+        run: gh release create "${{env.TAG_NAME}}" --generate-notes
