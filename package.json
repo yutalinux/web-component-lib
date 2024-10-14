@@ -7,7 +7,7 @@
     "dev": "storybook dev -p 6006",
     "build": "vite build && tsc -b",
     "test": "bun test",
-    "test:update-snapshot": "bun test --update-snapshots",
+    "test:update-snapshots": "bun test --update-snapshots",
     "lint": "bun run lint:check",
     "lint:check": "biome lint",
     "lint:fix": "biome format --write && biome lint --apply",

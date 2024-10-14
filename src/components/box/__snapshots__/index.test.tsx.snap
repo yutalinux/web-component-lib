@@ -1,0 +1,5 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box Snapshot 1`] = `"<div class="flex gap-2 flex-col"></div>"`;
+
+exports[`Box Snapshot 2`] = `"<div class="flex gap-2"></div>"`;
