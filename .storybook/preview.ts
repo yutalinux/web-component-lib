@@ -23,7 +23,7 @@ export const parameters = {
     default: "light",
     values: [
       { name: "light", value: "#ffffff" },
-      { name: "dark", value: "#1a1a1a" },
+      { name: "dark", value: "#171717" },
     ],
   },
 };
