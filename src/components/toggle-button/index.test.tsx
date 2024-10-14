@@ -3,7 +3,7 @@ import { createElement } from "react";
 import { renderToString } from "react-dom/server";
 import ToggleButton from ".";
 
-test("Button Snapshot", () => {
+test("Toggle Button Snapshot", () => {
   const button = createElement(ToggleButton, {
     onChange: () => {},
     label: "Click me",
