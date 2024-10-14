@@ -9,6 +9,6 @@ export interface CardProps {
   children?: ReactNode;
 }
 
-export default function Card(props: CardProps) {
-  return <div className={card()}>{props.children || null}</div>;
+export default function Card({ children }: CardProps) {
+  return <div className={card()}>{children || null}</div>;
 }

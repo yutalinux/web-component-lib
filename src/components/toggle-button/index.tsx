@@ -19,7 +19,7 @@ const toggleButton = tv({
     select:
       "text-white bg-black hover:bg-neutral-900 dark:bg-white dark:text-black dark:hover:bg-neutral-100",
     noSelect:
-      "border box-border text-black bg-white hover:bg-neutral-100 dark:bg-neutral-900 dark:text-white dark:border-neutral-800 dark:hover:bg-neutral-800",
+      "border box-border text-black bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-800",
   },
   defaultVariants: {
     color: "primary",
