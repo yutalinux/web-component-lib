@@ -17,42 +17,42 @@ type Story = StoryObj<typeof meta>;
 
 export const H1: Story = {
   args: {
-    type: "h1",
+    type: 1,
     label: "Typography",
   },
 };
 
 export const H2: Story = {
   args: {
-    type: "h2",
+    type: 2,
     label: "Typography",
   },
 };
 
 export const H3: Story = {
   args: {
-    type: "h3",
+    type: 3,
     label: "Typography",
   },
 };
 
 export const H4: Story = {
   args: {
-    type: "h4",
+    type: 4,
     label: "Typography",
   },
 };
 
 export const H5: Story = {
   args: {
-    type: "h5",
+    type: 5,
     label: "Typography",
   },
 };
 
 export const H6: Story = {
   args: {
-    type: "h6",
+    type: 6,
     label: "Typography",
   },
 };
