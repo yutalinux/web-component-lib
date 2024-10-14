@@ -1,10 +1,7 @@
 import { expect, test } from "bun:test";
-import { createElement } from "react";
-import { renderToString } from "react-dom/server";
+import { snapshot } from "@/utils/tests/snapshot";
 import Card from ".";
 
 test("Card Snapshot", () => {
-  const button = createElement(Card, null);
-  const renderedString = renderToString(button);
-  expect(renderedString).toMatchSnapshot();
+  expect(snapshot(Card, null)).toMatchSnapshot();
 });
