@@ -1,6 +1,6 @@
 import "./style.css";
 
-import "./styles/typography";
+import "./styles/typography.css";
 
 export * from "./components/button";
 export * from "./components/toggle-button";
