@@ -1,3 +1,5 @@
+"use client";
+
 import type { HTMLInputTypeAttribute } from "react";
 import * as Aria from "react-aria-components";
 import { tv } from "tailwind-variants";
