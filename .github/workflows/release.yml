@@ -3,7 +3,7 @@ name: Create Relase
 on:
   push:
     tags:
-      - v.*
+      - v*.*.*
 
 jobs:
   release:
