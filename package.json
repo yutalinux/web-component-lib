@@ -35,7 +35,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.umd.js"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "dependencies": {
     "ajv": "^8.17.1",
