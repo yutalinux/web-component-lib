@@ -1,9 +1,28 @@
+import { readdirSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import autoprefixer from "autoprefixer";
+import preserveDirectives from "rollup-preserve-directives";
 import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+
+const components_dir = resolve(__dirname, "src/components/");
+const files = [
+  resolve(__dirname, "src/index.ts"),
+  ...readdirSync(components_dir)
+    .map((component) => {
+      const dir = resolve(components_dir, component);
+      const index_tsx = resolve(dir, "index.tsx");
+      try {
+        if (statSync(index_tsx).isFile()) {
+          return index_tsx;
+        }
+      } catch {}
+      return null;
+    })
+    .filter((path) => path !== null),
+];
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -12,6 +31,7 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
     }),
+    preserveDirectives(),
   ],
   css: {
     postcss: {
@@ -20,7 +40,9 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.ts"),
+      entry: files.map((file) => {
+        return file;
+      }),
       name: "index",
       fileName: "index",
     },
