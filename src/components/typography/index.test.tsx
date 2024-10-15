@@ -2,7 +2,7 @@ import { snapshotElement } from "@/utils/tests/snapshot";
 import { expect, test } from "vitest";
 import Typography from ".";
 
-test("ToggleButton Snapshot", () => {
+test("Typography Snapshot", () => {
   expect(
     snapshotElement(Typography, { type: "h1", label: "Heading1" }),
   ).toMatchSnapshot();
