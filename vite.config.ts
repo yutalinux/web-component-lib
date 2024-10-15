@@ -7,16 +7,18 @@ import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 
-const components_dir = "src/components/";
+const components_dir = resolve(__dirname, "src/components/");
 const files = [
-  "src/index.ts",
+  resolve(__dirname, "src/index.ts"),
   ...readdirSync(components_dir)
     .map((component) => {
       const dir = resolve(components_dir, component);
       const index_tsx = resolve(dir, "index.tsx");
-      if (statSync(index_tsx).isFile()) {
-        return index_tsx;
-      }
+      try {
+        if (statSync(index_tsx).isFile()) {
+          return index_tsx;
+        }
+      } catch {}
       return null;
     })
     .filter((path) => path !== null),
@@ -39,7 +41,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: files.map((file) => {
-        return resolve(__dirname, file);
+        return file;
       }),
       name: "index",
       fileName: "index",
