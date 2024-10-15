@@ -4,7 +4,7 @@ export interface Props {
   children?: ReactNode;
 }
 
-export default function HeaderMenu({ children }: Props) {
+export function HeaderMenu({ children }: Props) {
   return (
     <div className="h-16 w-full">
       <nav className="shadow-menubar fixed flex h-16 w-full items-center justify-center bg-[#333333cc] backdrop-blur">

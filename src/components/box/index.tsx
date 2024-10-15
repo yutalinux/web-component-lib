@@ -17,6 +17,6 @@ export interface BoxProps extends VProps {
   children?: ReactNode;
 }
 
-export default function Box({ orientation, children }: BoxProps) {
+export function Box({ orientation, children }: BoxProps) {
   return <div className={box({ orientation })}>{children || null}</div>;
 }

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Label from "./index";
+import { Label } from "./index";
 
 const meta = {
   title: "Design System/Components/Label",

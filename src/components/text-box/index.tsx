@@ -13,7 +13,7 @@ export interface TextBoxProps {
   placeholder?: string;
 }
 
-export default function TextBox({ type, placeholder }: TextBoxProps) {
+export function TextBox({ type, placeholder }: TextBoxProps) {
   return (
     <Aria.Input type={type} className={textBox()} placeholder={placeholder} />
   );

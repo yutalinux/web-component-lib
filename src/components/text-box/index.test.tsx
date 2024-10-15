@@ -1,6 +1,6 @@
 import { snapshotElement } from "@/utils/tests/snapshot";
 import { expect, test } from "vitest";
-import TextBox from ".";
+import { TextBox } from ".";
 
 test("TextBox Snapshot", () => {
   expect(

@@ -15,7 +15,7 @@ interface Props extends VProps {
   children?: ReactNode;
 }
 
-export default function MenuLinkItem({ href, children }: Props) {
+export function MenuLinkItem({ href, children }: Props) {
   const { base, link } = menuLinkItem();
   return (
     <li className={base()}>

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import React from "react";
-import Box from "../box";
-import Button from "../button";
-import Label from "../label";
-import TextBox from "../text-box";
-import Form from "./index";
+import { Box } from "../box";
+import { Button } from "../button";
+import { Label } from "../label";
+import { TextBox } from "../text-box";
+import { Form } from "./index";
 
 const meta = {
   title: "Design System/Components/Form",

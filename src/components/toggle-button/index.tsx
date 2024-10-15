@@ -37,7 +37,7 @@ export interface ToggleButtonProps extends VProps {
   onChange?: (isSelected: boolean) => void;
 }
 
-export default function ToggleButton({
+export function ToggleButton({
   size,
   label,
   icon,

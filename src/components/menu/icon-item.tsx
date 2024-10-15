@@ -14,7 +14,7 @@ interface Props extends VProps {
   icon: string;
 }
 
-export default function MenuIconItem({ href, icon }: Props) {
+export function MenuIconItem({ href, icon }: Props) {
   const { base, img } = menuIconItem();
 
   return (

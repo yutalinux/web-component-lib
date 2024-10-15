@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Link from "./index";
+import { Link } from "./index";
 
 const meta = {
   title: "Design System/Components/Link",

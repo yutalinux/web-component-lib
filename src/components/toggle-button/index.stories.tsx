@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { fn } from "@storybook/test";
-import ToggleButton from ".";
+import { ToggleButton } from ".";
 
 const meta = {
   title: "Design System/Components/ToggleButton",

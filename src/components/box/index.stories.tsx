@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import React from "react";
-import Box from "./index";
+import { Box } from "./index";
 
 const meta = {
   title: "Design System/Components/Box",

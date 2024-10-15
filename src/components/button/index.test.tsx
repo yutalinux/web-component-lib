@@ -1,6 +1,6 @@
 import { snapshotElement } from "@/utils/tests/snapshot";
 import { expect, test } from "vitest";
-import Button from ".";
+import { Button } from ".";
 
 test("Button Snapshot", () => {
   expect(snapshotElement(Button, { label: "Button" })).toMatchSnapshot();

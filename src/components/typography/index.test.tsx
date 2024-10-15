@@ -1,6 +1,6 @@
 import { snapshotElement } from "@/utils/tests/snapshot";
 import { expect, test } from "vitest";
-import Typography from ".";
+import { Typography } from ".";
 
 test("Typography Snapshot", () => {
   expect(

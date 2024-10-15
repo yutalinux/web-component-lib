@@ -9,6 +9,6 @@ export interface LabelProps {
   label: string;
 }
 
-export default function Label({ label }: LabelProps) {
+export function Label({ label }: LabelProps) {
   return <Aria.Label className={labelStyle()}>{label}</Aria.Label>;
 }

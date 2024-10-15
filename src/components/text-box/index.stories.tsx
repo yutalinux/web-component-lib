@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import TextBox from "./index";
+import { TextBox } from "./index";
 
 const meta = {
   title: "Design System/Components/TextBox",
