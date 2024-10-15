@@ -1,9 +1,8 @@
 {
   "name": "@yutalinux/web-component-lib",
   "version": "1.4.5",
-  "private": true,
   "scripts": {
-    "pr": "gh pr create -f -B dev",
+    "pr": "gh pr create -f",
     "dev": "storybook dev -p 6006",
     "build": "vite build && tsc -b",
     "test": "vitest run",
