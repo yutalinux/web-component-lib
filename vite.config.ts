@@ -5,6 +5,7 @@ import preserveDirectives from "rollup-preserve-directives";
 import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,6 +15,7 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
     preserveDirectives(),
+    libInjectCss(),
   ],
   css: {
     postcss: {
