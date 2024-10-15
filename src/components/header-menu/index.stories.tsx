@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import React from "react";
-import HeaderMenu from ".";
-import MenuLinkItem from "../menu/link-item";
-import HeaderMenuLinks from "./links";
+import { HeaderMenu } from ".";
+import { MenuLinkItem } from "../menu/link-item";
+import { HeaderMenuLinks } from "./links";
 
 const meta = {
   title: "Design System/Components/HeaderMenu",

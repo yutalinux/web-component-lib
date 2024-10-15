@@ -10,6 +10,6 @@ export interface FormProps {
   children: ReactNode;
 }
 
-export default function Form({ children }: FormProps) {
+export function Form({ children }: FormProps) {
   return <Aria.Form className={form()}>{children}</Aria.Form>;
 }

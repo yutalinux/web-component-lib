@@ -11,6 +11,6 @@ interface Props extends VProps {
   children?: ReactNode;
 }
 
-export default function HeaderMenuLinks({ children }: Props) {
+export function HeaderMenuLinks({ children }: Props) {
   return <ul className={menuLinks()}>{children}</ul>;
 }

@@ -3,7 +3,7 @@ export interface TypographyProps {
   label: string;
 }
 
-export default function Typography({ type, label }: TypographyProps) {
+export function Typography({ type, label }: TypographyProps) {
   switch (type) {
     case "h1":
       return <h1>{label}</h1>;

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import React from "react";
-import Card from ".";
+import { Card } from ".";
 
 const meta = {
   title: "Design System/Components/Card",

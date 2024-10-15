@@ -10,7 +10,7 @@ export interface LinkProps {
   href: string;
 }
 
-export default function Link({ href, label }: LinkProps) {
+export function Link({ href, label }: LinkProps) {
   return (
     <Aria.Link href={href} className={link()}>
       {label}
