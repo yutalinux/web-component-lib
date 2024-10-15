@@ -1,7 +1,7 @@
 import { type Attributes, type FunctionComponent, createElement } from "react";
 import { renderToString } from "react-dom/server";
 
-export function snapshot<T extends {}>(
+export function snapshotElement<T extends {}>(
   type: FunctionComponent<T>,
   args: (Attributes & T) | null,
 ) {

@@ -1,10 +1,10 @@
-import { snapshot } from "@/utils/tests/snapshot";
+import { snapshotElement } from "@/utils/tests/snapshot";
 import { expect, test } from "vitest";
 import Link from ".";
 
 test("Link Snapshot", () => {
   expect(
-    snapshot(Link, {
+    snapshotElement(Link, {
       href: "https://github.com/yutalinux/web-component-lib",
       label: "Link",
     }),
