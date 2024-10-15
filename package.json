@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "pr": "gh pr create -f -B dev",
-    "preinstall": "pnpm run build",
     "dev": "storybook dev -p 6006",
     "build": "vite build && tsc -b",
     "test": "vitest run",
