@@ -1,21 +1,23 @@
 export interface TypographyProps {
-  type: 1 | 2 | 3 | 4 | 5 | 6;
+  type: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
   label: string;
 }
 
 export default function Typography({ type, label }: TypographyProps) {
   switch (type) {
-    case 1:
+    case "h1":
       return <h1>{label}</h1>;
-    case 2:
+    case "h2":
       return <h2>{label}</h2>;
-    case 3:
+    case "h3":
       return <h3>{label}</h3>;
-    case 4:
+    case "h4":
       return <h4>{label}</h4>;
-    case 5:
+    case "h5":
       return <h5>{label}</h5>;
-    case 6:
+    case "h6":
       return <h6>{label}</h6>;
+    case "p":
+      return <p>{label}</p>;
   }
 }
