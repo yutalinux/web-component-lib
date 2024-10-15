@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import * as Aria from "react-aria-components";
 import { type VariantProps, tv } from "tailwind-variants";
