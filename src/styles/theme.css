@@ -1,0 +1,7 @@
+body {
+  @apply bg-white transition-colors !important;
+}
+
+.dark body {
+  @apply bg-neutral-900 !important;
+}

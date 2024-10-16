@@ -15,3 +15,5 @@ export function HeaderMenu({ children }: Props) {
     </div>
   );
 }
+
+export { HeaderMenuLinks } from "./links";
