@@ -1,6 +1,6 @@
 {
   "name": "@yutalinux/web-component-lib",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "scripts": {
     "pr": "./scripts/pullreq.sh",
     "pr:cmd": "gh pr create -f",
