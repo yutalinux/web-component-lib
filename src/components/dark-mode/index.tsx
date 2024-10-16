@@ -24,7 +24,7 @@ function getDarkMode(theme: Theme): boolean {
 }
 
 export function useDarkMode(): [() => Theme, (theme: Theme) => void] {
-  if (!document) {
+  if (typeof document === "undefined") {
     return [() => "system", (_) => {}];
   }
   const classList = document.documentElement.classList;
