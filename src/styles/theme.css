@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors !important;
+  @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text !important;
 }
 
 @layer base {
@@ -12,7 +12,7 @@ body {
   }
 
   .primary-border {
-    @apply border box-border border-light-primary-border dark:border-dark-primary-border;
+    @apply box-border border border-light-primary-border dark:border-dark-primary-border;
   }
 
   .primary-active {
@@ -24,11 +24,10 @@ body {
   }
 
   .secondary-border {
-    @apply border box-border border-light-secondary-border dark:border-dark-secondary-border;
+    @apply box-border border border-light-secondary-border dark:border-dark-secondary-border;
   }
 
   .secondary-active {
     @apply bg-light-secondary-active-bg dark:bg-dark-secondary-active-bg;
   }
 }
-
