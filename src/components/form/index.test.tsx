@@ -1,4 +1,4 @@
-import { snapshotElement } from "@/utils/tests/snapshot";
+import { snapshotElement } from "@/utils/snapshot";
 import { expect, test } from "vitest";
 import { Form } from ".";
 
