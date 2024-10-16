@@ -24,9 +24,13 @@ function getDarkMode(theme: Theme): boolean {
 }
 
 export function useDarkMode(): [() => Theme, (theme: Theme) => void] {
+  if (!document) {
+    return [() => "system", (_) => {}];
+  }
   const classList = document.documentElement.classList;
   const storageTheme = localStorage.getItem("theme") || "system";
   const [theme, setTheme] = useState<Theme>(storageTheme as Theme);
+
   const get = () => {
     return theme;
   };
