@@ -9,7 +9,7 @@ export interface DarkModeProps {
   setTheme: Dispatch<Theme>;
 }
 
-function getDarkMode(theme: Theme): boolean {
+export function getDarkMode(theme: Theme): boolean {
   switch (theme) {
     case "system":
       if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
