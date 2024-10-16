@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState, type Dispatch } from "react";
+import { useState, type Dispatch } from "react";
 
 export type Theme = "system" | "dark" | "light";
 

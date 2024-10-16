@@ -1,7 +1,7 @@
 "use client";
 import { Menu, MenuItem } from "../menu";
 import { MdDarkMode, MdLightMode, MdMonitor } from "react-icons/md";
-import { useDarkMode, type Theme } from ".";
+import { useDarkMode } from ".";
 import { type ReactNode, useEffect, useState } from "react";
 
 export function DarkModeButton() {
