@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { TextBox } from "./index";
+import { TextField } from ".";
 
 const meta = {
-  title: "Design System/Components/TextBox",
-  component: TextBox,
+  title: "Design System/Components/TextField",
+  component: TextField,
   tags: ["autodocs"],
-} satisfies Meta<typeof TextBox>;
+} satisfies Meta<typeof TextField>;
 
 export default meta;
 
@@ -14,6 +14,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    placeholder: "TextBox",
+    label: "Text",
   },
 };

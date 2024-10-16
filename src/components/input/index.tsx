@@ -1,7 +1,6 @@
 "use client";
 
 import type { HTMLInputTypeAttribute } from "react";
-import * as Aria from "react-aria-components";
 import { tv } from "tailwind-variants";
 
 const textBox = tv({
@@ -13,8 +12,8 @@ export interface TextBoxProps {
   placeholder?: string;
 }
 
-export function TextBox({ type, placeholder }: TextBoxProps) {
+export function Input({ type, placeholder }: TextBoxProps) {
   return (
-    <Aria.Input type={type} className={textBox()} placeholder={placeholder} />
+    <input type={type} className={textBox()} placeholder={placeholder} />
   );
 }

@@ -1,4 +1,3 @@
-import * as Aria from "react-aria-components";
 import { tv } from "tailwind-variants";
 
 const link = tv({
@@ -12,8 +11,8 @@ export interface LinkProps {
 
 export function Link({ href, label }: LinkProps) {
   return (
-    <Aria.Link href={href} className={link()}>
+    <a href={href} className={link()}>
       {label}
-    </Aria.Link>
+    </a>
   );
 }

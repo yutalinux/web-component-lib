@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`Card Snapshot 1`] = `"<div class="secondary secondary-border p-2 rounded-md"></div>"`;

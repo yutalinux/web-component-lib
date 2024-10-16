@@ -1,6 +1,5 @@
 "use client";
-import type { ReactNode } from "react";
-import * as Aria from "react-aria-components";
+import { useRef, type ReactNode } from "react";
 import { Button } from "../button";
 import { tv } from "tailwind-variants";
 
@@ -31,15 +30,40 @@ export function Menu({
   buttonChildren,
   children,
 }: MenuProps) {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+
   return (
-    <Aria.MenuTrigger>
-      <Button label={label} icon={icon} color={color} size={size}>
+    <>
+      <Button
+        label={label}
+        icon={icon}
+        color={color}
+        size={size}
+        onClick={() => {
+          if (dialogRef.current) {
+            if (!dialogRef.current.open) {
+              dialogRef.current.show();
+            } else {
+              dialogRef.current.close();
+            }
+          }
+        }}
+      >
         {buttonChildren}
       </Button>
-      <Aria.Popover>
-        <Aria.Menu className={menu({ color })}>{children}</Aria.Menu>
-      </Aria.Popover>
-    </Aria.MenuTrigger>
+      <dialog
+        ref={dialogRef}
+        className="bg-transparent"
+        onClick={() => {
+          if (dialogRef.current) dialogRef.current.close();
+        }}
+        onBlur={() => {
+          if (dialogRef.current) dialogRef.current.close();
+        }}
+      >
+        <menu className={menu({ color })}>{children}</menu>
+      </dialog>
+    </>
   );
 }
 

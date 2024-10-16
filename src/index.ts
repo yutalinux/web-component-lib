@@ -10,6 +10,5 @@ export * from "./components/header-menu";
 export * from "./components/label";
 export * from "./components/link";
 export * from "./components/menu";
-export * from "./components/text-box";
-export * from "./components/toggle-button";
+export * from "./components/input";
 // export * from "./components/typography";

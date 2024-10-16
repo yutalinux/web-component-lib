@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import * as Aria from "react-aria-components";
 import { tv } from "tailwind-variants";
 
 const form = tv({
@@ -11,5 +10,5 @@ export interface FormProps {
 }
 
 export function Form({ children }: FormProps) {
-  return <Aria.Form className={form()}>{children}</Aria.Form>;
+  return <form className={form()}>{children}</form>;
 }

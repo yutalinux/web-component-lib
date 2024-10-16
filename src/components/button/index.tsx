@@ -1,7 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
-import * as Aria from "react-aria-components";
+import type { MouseEventHandler, ReactNode } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
 
 const button = tv({
@@ -33,7 +32,7 @@ type VProps = VariantProps<typeof button>;
 export interface ButtonProps extends VProps {
   label?: string;
   children?: ReactNode;
-  onClick?: (e: Aria.PressEvent) => void;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 export function Button({
@@ -45,12 +44,8 @@ export function Button({
   onClick,
 }: ButtonProps) {
   return (
-    <Aria.Button
-      type="button"
-      className={button({ color, size, icon: icon })}
-      onPress={onClick}
-    >
+    <button className={button({ color, size, icon: icon })} onClick={onClick}>
       {label || children || null}
-    </Aria.Button>
+    </button>
   );
 }
