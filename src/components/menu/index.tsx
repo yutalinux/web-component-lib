@@ -9,8 +9,7 @@ const menu = tv({
   variants: {
     color: {
       primary: "primary",
-      secondary:
-        "secondary secondary-border",
+      secondary: "secondary secondary-border",
     },
   },
 });

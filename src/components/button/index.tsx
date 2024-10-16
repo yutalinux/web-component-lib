@@ -8,10 +8,8 @@ const button = tv({
   base: "rounded-md outline-none",
   variants: {
     color: {
-      primary:
-        "primary hover:primary-active",
-      secondary:
-        "secondary secondary-border hover:secondary-active",
+      primary: "primary hover:primary-active",
+      secondary: "secondary secondary-border hover:secondary-active",
     },
     size: {
       small: "text-sm",

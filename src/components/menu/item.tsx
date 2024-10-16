@@ -5,10 +5,8 @@ const menuItem = tv({
   base: "outline-none rounded px-1",
   variants: {
     color: {
-      primary:
-        "primary hover:primary-active",
-      secondary:
-        "secondary hover:secondary-active",
+      primary: "primary hover:primary-active",
+      secondary: "secondary hover:secondary-active",
     },
     size: {
       small: "text-sm",

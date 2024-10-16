@@ -18,10 +18,8 @@ const toggleButton = tv({
     },
   },
   slots: {
-    select:
-      "primary hover:primary-active",
-    noSelect:
-      "secondary secondary-border hover:secondary-active",
+    select: "primary hover:primary-active",
+    noSelect: "secondary secondary-border hover:secondary-active",
   },
   defaultVariants: {
     size: "medium",

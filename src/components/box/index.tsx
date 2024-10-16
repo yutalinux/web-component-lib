@@ -10,8 +10,8 @@ const box = tv({
     },
   },
   defaultVariants: {
-    orientation: "vertical"
-  }
+    orientation: "vertical",
+  },
 });
 
 type VProps = VariantProps<typeof box>;

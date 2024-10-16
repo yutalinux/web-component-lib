@@ -5,7 +5,7 @@ import * as Aria from "react-aria-components";
 import { tv } from "tailwind-variants";
 
 const textBox = tv({
-  base: "secondary secondary-border focus:secondary-active rounded-md px-2 py-1 w-full"
+  base: "secondary secondary-border focus:secondary-active rounded-md px-2 py-1 w-full",
 });
 
 export interface TextBoxProps {
