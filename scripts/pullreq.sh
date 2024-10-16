@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./check.sh && pnpm run pr:cmd
+./scripts/check.sh && pnpm run pr:cmd
