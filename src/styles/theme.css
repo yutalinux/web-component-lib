@@ -1,7 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  @apply bg-white transition-colors !important;
+  @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors !important;
 }
 
-.dark body {
-  @apply bg-neutral-900 !important;
+@layer base {
+  .primary {
+    @apply bg-light-primary-bg text-light-primary-text dark:bg-dark-primary-bg dark:text-dark-primary-text;
+  }
+
+  .primary-border {
+    @apply border box-border border-light-primary-border dark:border-dark-primary-border;
+  }
+
+  .primary-active {
+    @apply bg-light-primary-active-bg dark:bg-dark-primary-active-bg;
+  }
+
+  .secondary {
+    @apply bg-light-secondary-bg text-light-secondary-text dark:bg-dark-secondary-bg dark:text-dark-secondary-text;
+  }
+
+  .secondary-border {
+    @apply border box-border border-light-secondary-border dark:border-dark-secondary-border;
+  }
+
+  .secondary-active {
+    @apply bg-light-secondary-active-bg dark:bg-dark-secondary-active-bg;
+  }
 }
+

@@ -9,6 +9,9 @@ const box = tv({
       vertical: "flex-col",
     },
   },
+  defaultVariants: {
+    orientation: "vertical"
+  }
 });
 
 type VProps = VariantProps<typeof box>;

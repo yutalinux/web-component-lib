@@ -9,9 +9,9 @@ const button = tv({
   variants: {
     color: {
       primary:
-        "text-white bg-black hover:bg-neutral-900 dark:bg-white dark:text-black dark:hover:bg-neutral-100",
+        "primary hover:primary-active",
       secondary:
-        "border box-border border-neutral100 text-black bg-white hover:bg-neutral-100 dark:bg-neutral-900 dark:text-white dark:border-neutral-800 dark:hover:bg-neutral-800",
+        "secondary secondary-border hover:secondary-active",
     },
     size: {
       small: "text-sm",
