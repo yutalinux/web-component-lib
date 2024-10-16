@@ -6,11 +6,10 @@ import { MdDarkMode, MdLightMode, MdMonitor } from "react-icons/md";
 export type Theme = "system" | "dark" | "light";
 
 export interface DarkModeButtonProps {
-  label: string;
   size?: "medium" | "small" | "large";
 }
 
-export function DarkModeButton({ size, label }: DarkModeButtonProps) {
+export function DarkModeButton({ size }: DarkModeButtonProps) {
   const [theme, setTheme] = useState<Theme>("system");
 
   useEffect(() => {
