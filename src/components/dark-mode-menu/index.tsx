@@ -3,23 +3,22 @@ import { useEffect, useState } from "react";
 import { Menu, MenuItem } from "../menu";
 import { MdDarkMode, MdLightMode, MdMonitor } from "react-icons/md";
 
-export type Theme = "system" | "dark" | "light";
+export type Theme = "system" | "dark" | "light" | "storage";
 
 export interface DarkModeButtonProps {
   size?: "medium" | "small" | "large";
 }
 
 export function DarkModeButton({ size }: DarkModeButtonProps) {
-  const [theme, setTheme] = useState<Theme>("system");
+  const [theme, setTheme] = useState<Theme>("storage");
 
   useEffect(() => {
-    const localTheme = localStorage.getItem("theme");
-    if (localTheme) setTheme(localTheme as Theme);
-  }, []);
+    if (theme === "storage") {
+      const localTheme = localStorage.getItem("theme");
+      if (localTheme) setTheme(localTheme as Theme);
+    }
 
-  useEffect(() => {
     localStorage.setItem("theme", theme);
-
     if (theme === "system") {
       if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
         document.documentElement.classList.add("dark");

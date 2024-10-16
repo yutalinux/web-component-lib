@@ -1,4 +1,4 @@
-import "@/styles";
+import "../src/styles/index";
 import { withThemeByClassName } from "@storybook/addon-themes";
 
 export const decorators = [

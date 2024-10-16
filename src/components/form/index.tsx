@@ -3,7 +3,7 @@ import * as Aria from "react-aria-components";
 import { tv } from "tailwind-variants";
 
 const form = tv({
-  base: "bg-white text-black border p-4 rounded-md flex flex-col gap-4",
+  base: "secondary secondary-border text-black border p-4 rounded-md flex flex-col gap-4",
 });
 
 export interface FormProps {
