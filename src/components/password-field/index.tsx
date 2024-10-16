@@ -3,13 +3,14 @@ import { Label } from "../label";
 
 export interface PasswordFieldProps {
   label: string;
+  autoComplete?: React.HTMLInputAutoCompleteAttribute;
 }
 
-export function PasswordField({ label }: PasswordFieldProps) {
+export function PasswordField({ label, autoComplete }: PasswordFieldProps) {
   return (
     <div>
       <Label label={label} />
-      <Input type="password" />
+      <Input autoComplete={autoComplete} type="password" />
     </div>
   );
 }
