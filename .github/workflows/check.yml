@@ -1,12 +1,6 @@
 name: Check Pull Request
 
 on:
-  workflow_run:
-    workflows:
-      - Create Relase
-      - Publish Github Packages
-    types:
-      - requested
   pull_request:
     types:
       - opened
