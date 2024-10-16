@@ -6,9 +6,9 @@ const menuItem = tv({
   variants: {
     color: {
       primary:
-        "text-white bg-black hover:bg-neutral-900 dark:bg-white dark:text-black dark:hover:bg-neutral-100",
+        "primary hover:primary-active",
       secondary:
-        "text-black bg-white hover:bg-neutral-100 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800",
+        "secondary hover:secondary-active",
     },
     size: {
       small: "text-sm",

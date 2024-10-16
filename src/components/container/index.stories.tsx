@@ -15,6 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: <div className="bg-black w-full h-full" />,
+    children: <div className="bg-black w-full h-screen" />,
   },
 };

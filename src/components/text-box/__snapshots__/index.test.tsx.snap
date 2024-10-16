@@ -1,5 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`TextBox Snapshot 1`] = `"<input class="bg-white text-black border-neutral-200 focus:bg-neutral-100 dark:bg-neutral-900 dark:text-white dark:border-neutral-800 dark:focus:bg-neutral-800 border box-border rounded-md px-2 py-1 w-full" placeholder="Placeholder" data-rac=""/>"`;
+exports[`TextBox Snapshot 1`] = `"<input class="secondary secondary-border focus:secondary-active rounded-md px-2 py-1 w-full" placeholder="Placeholder" data-rac=""/>"`;
 
-exports[`TextBox Snapshot 2`] = `"<input type="password" class="bg-white text-black border-neutral-200 focus:bg-neutral-100 dark:bg-neutral-900 dark:text-white dark:border-neutral-800 dark:focus:bg-neutral-800 border box-border rounded-md px-2 py-1 w-full" data-rac=""/>"`;
+exports[`TextBox Snapshot 2`] = `"<input type="password" class="secondary secondary-border focus:secondary-active rounded-md px-2 py-1 w-full" data-rac=""/>"`;

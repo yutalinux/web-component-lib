@@ -8,9 +8,9 @@ const menu = tv({
   base: "rounded-md outline-none px-1 py-1 flex flex-col gap-2",
   variants: {
     color: {
-      primary: "text-white bg-black dark:bg-white dark:text-black",
+      primary: "primary",
       secondary:
-        "border box-border border-neutral-200  text-black bg-white dark:bg-neutral-900 dark:text-white dark:border-neutral-800",
+        "secondary secondary-border",
     },
   },
 });
