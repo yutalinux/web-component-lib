@@ -38,7 +38,14 @@ export interface ButtonProps extends VProps {
   onClick?: (e: Aria.PressEvent) => void;
 }
 
-export function Button({ color, size, icon, label,children, onClick }: ButtonProps) {
+export function Button({
+  color,
+  size,
+  icon,
+  label,
+  children,
+  onClick,
+}: ButtonProps) {
   return (
     <Aria.Button
       type="button"

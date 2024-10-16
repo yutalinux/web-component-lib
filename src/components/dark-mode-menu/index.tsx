@@ -40,22 +40,33 @@ export function DarkModeButton({ size, label }: DarkModeButtonProps) {
   let icon = <></>;
   switch (theme) {
     case "dark":
-      icon = <MdDarkMode className="w-6 h-6" />
+      icon = <MdDarkMode className="w-6 h-6" />;
       break;
     case "light":
-      icon = <MdLightMode className="w-6 h-6" />
+      icon = <MdLightMode className="w-6 h-6" />;
       break;
     default:
-      icon = <MdMonitor className="w-6 h-6" />
+      icon = <MdMonitor className="w-6 h-6" />;
       break;
   }
 
-
   return (
     <Menu buttonChildren={icon} icon={true} color={"secondary"} size={size}>
-      <MenuItem color="secondary" onAction={() => setTheme("system")} label="System"/>
-      <MenuItem color="secondary" onAction={() => setTheme("dark")} label="Dark"/>
-      <MenuItem color="secondary" onAction={() => setTheme("light")} label="Light"/>
+      <MenuItem
+        color="secondary"
+        onAction={() => setTheme("system")}
+        label="System"
+      />
+      <MenuItem
+        color="secondary"
+        onAction={() => setTheme("dark")}
+        label="Dark"
+      />
+      <MenuItem
+        color="secondary"
+        onAction={() => setTheme("light")}
+        label="Light"
+      />
     </Menu>
   );
 }
