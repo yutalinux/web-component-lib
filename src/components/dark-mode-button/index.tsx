@@ -1,27 +1,22 @@
 "use client";
 import { Menu, MenuItem } from "../menu";
 import { MdDarkMode, MdLightMode, MdMonitor } from "react-icons/md";
-import { useDarkMode } from ".";
 import { type ReactNode, useEffect, useState } from "react";
+import { useDarkMode } from "@/utils/dark-mode/use-dark-mode";
 
 export function DarkModeButton() {
-  const [getDarkMode, setDarkMode] = useDarkMode();
+  const [theme, setDarkMode] = useDarkMode();
   const [icon, setIcon] = useState<ReactNode>(null);
-  const theme = getDarkMode();
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     switch (theme) {
       case "system":
-        setDarkMode("system");
         setIcon(<MdMonitor />);
         break;
       case "dark":
-        setDarkMode("dark");
         setIcon(<MdDarkMode />);
         break;
       case "light":
-        setDarkMode("light");
         setIcon(<MdLightMode />);
         break;
     }

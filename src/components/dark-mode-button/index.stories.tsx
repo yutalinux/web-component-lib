@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import { DarkModeButton, useDarkMode } from ".";
+import { DarkModeButton } from ".";
 
 const meta = {
   title: "Design System/Components/DarkModeButton",
@@ -13,8 +13,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => {
-    const [get, set] = useDarkMode();
-
     return <DarkModeButton />;
   },
 };

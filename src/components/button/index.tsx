@@ -44,7 +44,7 @@ export function Button({
   onClick,
 }: ButtonProps) {
   return (
-    <button className={button({ color, size, icon: icon })} onClick={onClick}>
+    <button className={button({ color, size, icon })} onClick={onClick}>
       {label || children || null}
     </button>
   );

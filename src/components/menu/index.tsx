@@ -67,6 +67,6 @@ export function Menu({
   );
 }
 
-export * from "./item";
-export * from "./icon-item";
-export * from "./link-item";
+export { MenuItem } from "./item";
+export { MenuIconItem } from "./icon-item";
+export { MenuLinkItem } from "./link-item";
