@@ -1,6 +1,6 @@
 {
   "name": "@yutalinux/web-component-lib",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "scripts": {
     "pr": "gh pr create -f",
     "dev": "storybook dev -p 6006",
