@@ -3,9 +3,10 @@ import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import { Box } from "../box";
 import { Button } from "../button";
-import { Label } from "../label";
-import { TextBox } from "../text-box";
 import { Form } from "./index";
+import { MailField } from "../mail-field";
+import { PasswordField } from "../password-field";
+import { TextField } from "../text-field";
 
 const meta = {
   title: "Design System/Components/Form",
@@ -23,14 +24,25 @@ export const LoginForm: Story = {
       <>
         <h2>Login</h2>
         <Box orientation="vertical">
-          <div>
-            <Label label="Email" />
-            <TextBox type="email" />
-          </div>
-          <div>
-            <Label label="Password" />
-            <TextBox type="password" />
-          </div>
+          <MailField label="Email" />
+          <PasswordField autoComplete="current-password" label="Password" />
+        </Box>
+        <Button label="Submit" />
+      </>
+    ),
+  },
+};
+
+export const SignUpForm: Story = {
+  args: {
+    children: (
+      <>
+        <h2>Sign Up</h2>
+        <Box orientation="vertical">
+          <TextField label="User" />
+          <MailField autoComplete="email" label="Email" />
+          <PasswordField autoComplete="new-password" label="Password" />
+          <input type="date" />
         </Box>
         <Button label="Submit" />
       </>

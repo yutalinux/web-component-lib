@@ -3,15 +3,16 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
 import tseslint from "typescript-eslint";
+// import { FlatCompat } from "@eslint/eslintrc";
+
+// const compat = new FlatCompat();
 
 export default tseslint.config(
   { ignores: ["dist"] },
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+  // ...compat.extends("plugin:storybook/recommended"),
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-      "plugin:storybook/recommended",
-    ],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,

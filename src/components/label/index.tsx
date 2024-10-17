@@ -1,4 +1,3 @@
-import * as Aria from "react-aria-components";
 import { tv } from "tailwind-variants";
 
 const labelStyle = tv({
@@ -10,5 +9,5 @@ export interface LabelProps {
 }
 
 export function Label({ label }: LabelProps) {
-  return <Aria.Label className={labelStyle()}>{label}</Aria.Label>;
+  return <label className={labelStyle()}>{label}</label>;
 }

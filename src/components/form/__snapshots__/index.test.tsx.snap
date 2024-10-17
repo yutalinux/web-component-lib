@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`Form Snapshot 1`] = `"<form class="secondary secondary-border p-4 rounded-md flex flex-col gap-4"></form>"`;

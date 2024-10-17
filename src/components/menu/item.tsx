@@ -1,4 +1,3 @@
-import * as Aria from "react-aria-components";
 import { type VariantProps, tv } from "tailwind-variants";
 
 const menuItem = tv({
@@ -29,14 +28,14 @@ export interface MenuItemProps extends VProps {
 
 export function MenuItem({ color, size, label, onAction }: MenuItemProps) {
   return (
-    <Aria.MenuItem
+    <div
       className={menuItem({
         color,
         size,
       })}
-      onAction={onAction}
+      onClick={onAction}
     >
       {label}
-    </Aria.MenuItem>
+    </div>
   );
 }

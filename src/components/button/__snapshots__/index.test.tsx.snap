@@ -1,9 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`Button Snapshot 1`] = `"<button type="button" class="rounded-md outline-none primary hover:primary-active text-base px-2 py-1" data-rac="" id="react-aria-:R0:">Button</button>"`;
-
-exports[`Button Snapshot 2`] = `"<button type="button" class="rounded-md outline-none secondary secondary-border hover:secondary-active text-base px-2 py-1" data-rac="" id="react-aria-:R0:">Button</button>"`;
-
-exports[`Button Snapshot 3`] = `"<button type="button" class="rounded-md outline-none primary hover:primary-active text-sm px-2 py-1" data-rac="" id="react-aria-:R0:">Button</button>"`;
-
-exports[`Button Snapshot 4`] = `"<button type="button" class="rounded-md outline-none primary hover:primary-active text-lg px-2 py-1" data-rac="" id="react-aria-:R0:">Button</button>"`;

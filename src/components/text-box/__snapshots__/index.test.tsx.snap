@@ -1,5 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`TextBox Snapshot 1`] = `"<input class="secondary secondary-border focus:secondary-active rounded-md px-2 py-1 w-full" placeholder="Placeholder" data-rac=""/>"`;
-
-exports[`TextBox Snapshot 2`] = `"<input type="password" class="secondary secondary-border focus:secondary-active rounded-md px-2 py-1 w-full" data-rac=""/>"`;
