@@ -4,7 +4,7 @@ export * from "./components/box";
 export * from "./components/button";
 export * from "./components/card";
 export * from "./components/container";
-export * from "./components/dark-mode";
+export * from "./components/dark-mode-button";
 export * from "./components/form";
 export * from "./components/header-menu";
 export * from "./components/input";
