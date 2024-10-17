@@ -12,7 +12,7 @@
     "test": "vitest run",
     "test:update": "vitest -u run",
     "lint": "eslint",
-    "format": "prettier",
+    "format": "prettier src",
     "format:fix": "prettier --write",
     "biome-lint": "bun run lint:check",
     "biome-lint:check": "biome lint",
